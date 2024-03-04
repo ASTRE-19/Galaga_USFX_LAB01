@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Galaga_USFX_LAB01.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{2042AFB5-0593-49B7-81E4-2C1C64D43063}</UniqueIdentifier>
+      <UniqueIdentifier>{B7DF3D83-B0B2-4B7D-B533-F01BCF31B431}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Galaga_USFX_LAB01.Target.cs">
       <Filter>Source</Filter>
@@ -11,8 +11,10 @@
     <None Include="..\..\Source\Galaga_USFX_LAB01Editor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.gitattributes" />
+    <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{98D5DF36-4080-4492-8EC4-8EB3E1F14917}</UniqueIdentifier>
+      <UniqueIdentifier>{6E72C64A-F927-46E9-8001-AD9578AC1A90}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +32,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Galaga_USFX_LAB01">
-      <UniqueIdentifier>{FAE98EDA-31A4-4B51-95BB-62DFDC522816}</UniqueIdentifier>
+      <UniqueIdentifier>{83B86E5E-CC65-4E2F-86E2-497D34CA3761}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Galaga_USFX_LAB01\Galaga_USFX_LAB01.Build.cs">
       <Filter>Source\Galaga_USFX_LAB01</Filter>
@@ -63,6 +65,18 @@
       <Filter>Source\Galaga_USFX_LAB01</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\Galaga_USFX_LAB01\NaveEnemigo.h">
+      <Filter>Source\Galaga_USFX_LAB01</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Galaga_USFX_LAB01\NaveEnemigoCaza.cpp">
+      <Filter>Source\Galaga_USFX_LAB01</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Galaga_USFX_LAB01\NaveEnemigoCaza.h">
+      <Filter>Source\Galaga_USFX_LAB01</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Galaga_USFX_LAB01\NaveEnemigoTransporte.cpp">
+      <Filter>Source\Galaga_USFX_LAB01</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Galaga_USFX_LAB01\NaveEnemigoTransporte.h">
       <Filter>Source\Galaga_USFX_LAB01</Filter>
     </ClInclude>
   </ItemGroup>

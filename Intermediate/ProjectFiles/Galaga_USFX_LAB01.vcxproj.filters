@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Galaga_USFX_LAB01.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{B7DF3D83-B0B2-4B7D-B533-F01BCF31B431}</UniqueIdentifier>
+      <UniqueIdentifier>{B969779B-FB07-47A7-8674-C2BF7CB9B4CC}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Galaga_USFX_LAB01.Target.cs">
       <Filter>Source</Filter>
@@ -14,7 +14,7 @@
     <None Include="..\..\.gitattributes" />
     <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{6E72C64A-F927-46E9-8001-AD9578AC1A90}</UniqueIdentifier>
+      <UniqueIdentifier>{A570AE47-0F82-4866-B0F8-5230E69074BE}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -32,8 +32,32 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Galaga_USFX_LAB01">
-      <UniqueIdentifier>{83B86E5E-CC65-4E2F-86E2-497D34CA3761}</UniqueIdentifier>
+      <UniqueIdentifier>{1C1D65D3-1631-40E1-9C4F-DA6538680F25}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\Galaga_USFX_LAB01\ControladorColiciones.cpp">
+      <Filter>Source\Galaga_USFX_LAB01</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Galaga_USFX_LAB01\ControladorColiciones.h">
+      <Filter>Source\Galaga_USFX_LAB01</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Galaga_USFX_LAB01\DisparoEnemigo.cpp">
+      <Filter>Source\Galaga_USFX_LAB01</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Galaga_USFX_LAB01\DisparoEnemigo.h">
+      <Filter>Source\Galaga_USFX_LAB01</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Galaga_USFX_LAB01\Escudo.cpp">
+      <Filter>Source\Galaga_USFX_LAB01</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Galaga_USFX_LAB01\Escudo.h">
+      <Filter>Source\Galaga_USFX_LAB01</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Galaga_USFX_LAB01\Explosion.cpp">
+      <Filter>Source\Galaga_USFX_LAB01</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Galaga_USFX_LAB01\Explosion.h">
+      <Filter>Source\Galaga_USFX_LAB01</Filter>
+    </ClInclude>
     <None Include="..\..\Source\Galaga_USFX_LAB01\Galaga_USFX_LAB01.Build.cs">
       <Filter>Source\Galaga_USFX_LAB01</Filter>
     </None>
@@ -61,6 +85,12 @@
     <ClInclude Include="..\..\Source\Galaga_USFX_LAB01\Galaga_USFX_LAB01Projectile.h">
       <Filter>Source\Galaga_USFX_LAB01</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\Galaga_USFX_LAB01\InterfazUsuario.cpp">
+      <Filter>Source\Galaga_USFX_LAB01</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Galaga_USFX_LAB01\InterfazUsuario.h">
+      <Filter>Source\Galaga_USFX_LAB01</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\Galaga_USFX_LAB01\NaveEnemigo.cpp">
       <Filter>Source\Galaga_USFX_LAB01</Filter>
     </ClCompile>
@@ -77,6 +107,24 @@
       <Filter>Source\Galaga_USFX_LAB01</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\Galaga_USFX_LAB01\NaveEnemigoTransporte.h">
+      <Filter>Source\Galaga_USFX_LAB01</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Galaga_USFX_LAB01\Nivel.cpp">
+      <Filter>Source\Galaga_USFX_LAB01</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Galaga_USFX_LAB01\Nivel.h">
+      <Filter>Source\Galaga_USFX_LAB01</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Galaga_USFX_LAB01\PowerUps.cpp">
+      <Filter>Source\Galaga_USFX_LAB01</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Galaga_USFX_LAB01\PowerUps.h">
+      <Filter>Source\Galaga_USFX_LAB01</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Galaga_USFX_LAB01\Sonido.cpp">
+      <Filter>Source\Galaga_USFX_LAB01</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Galaga_USFX_LAB01\Sonido.h">
       <Filter>Source\Galaga_USFX_LAB01</Filter>
     </ClInclude>
   </ItemGroup>

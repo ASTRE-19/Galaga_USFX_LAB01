@@ -15,7 +15,7 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Projectile, meta = (AllowPrivateAccess = "true"))
 	UStaticMeshComponent* NaveEnemigaMesh;
 
-private:
+protected:
 	float velocidad;
 	float resistencia; //Numero de disparos que puede recibir antes de ser destruido
 	FString nombre;

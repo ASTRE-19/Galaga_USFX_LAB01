@@ -3,3 +3,17 @@
 
 #include "NaveEnemigoTransporte.h"
 
+ANaveEnemigoTransporte::ANaveEnemigoTransporte()
+{
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> ShipMesh(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_NarrowCapsule.Shape_NarrowCapsule'"));
+	NaveEnemigaMesh->SetStaticMesh(ShipMesh.Object);
+
+}
+
+void ANaveEnemigoTransporte::Mover()
+{
+}
+
+void ANaveEnemigoTransporte::Disparar()
+{
+}

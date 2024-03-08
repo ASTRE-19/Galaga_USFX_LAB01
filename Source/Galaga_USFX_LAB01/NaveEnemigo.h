@@ -6,7 +6,7 @@
 #include "GameFramework/Actor.h"
 #include "NaveEnemigo.generated.h"
 
-UCLASS()
+UCLASS(abstract)
 class GALAGA_USFX_LAB01_API ANaveEnemigo : public AActor
 {
 	GENERATED_BODY()
@@ -76,4 +76,9 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+protected:
+	//Metodo virtual puro
+
+	void Mover() PURE_VIRTUAL(ANaveEnemigo::Mover, );
+	void Disparar() PURE_VIRTUAL(ANaveEnemigo::Disparar, );
 };

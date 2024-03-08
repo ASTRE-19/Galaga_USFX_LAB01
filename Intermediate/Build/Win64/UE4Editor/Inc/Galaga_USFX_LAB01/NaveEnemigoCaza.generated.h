@@ -36,7 +36,7 @@ public: \
 
 #define Galaga_USFX_LAB01_Source_Galaga_USFX_LAB01_NaveEnemigoCaza_h_15_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API ANaveEnemigoCaza(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	NO_API ANaveEnemigoCaza(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ANaveEnemigoCaza) \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, ANaveEnemigoCaza); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ANaveEnemigoCaza); \
@@ -48,8 +48,6 @@ public:
 
 
 #define Galaga_USFX_LAB01_Source_Galaga_USFX_LAB01_NaveEnemigoCaza_h_15_ENHANCED_CONSTRUCTORS \
-	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API ANaveEnemigoCaza() { }; \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ANaveEnemigoCaza(ANaveEnemigoCaza&&); \

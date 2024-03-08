@@ -20,9 +20,12 @@ private:
 
 
 public:
+	ANaveEnemigoTransporte();
 	FORCEINLINE float GetCapacidadCargaPeso() const { return capacidadCargaPeso; }
 	FORCEINLINE void SetCapacidadCargaPeso(float capacidad) { capacidadCargaPeso = capacidad; }
 	FORCEINLINE float GetCapacidadCargaVolumen() const { return capacidadCargaVolumen; }
 	FORCEINLINE void SetCapacidadCargaVolumen(float capacidad) { capacidadCargaVolumen = capacidad; }
-
+protected:
+	virtual void Mover();
+	virtual void Disparar();
 };

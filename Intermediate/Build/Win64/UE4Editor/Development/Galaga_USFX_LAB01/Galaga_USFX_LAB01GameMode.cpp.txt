@@ -15,3 +15,7 @@ D:\game\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.g
 D:\sis457\Galaga_USFX_LAB01\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_LAB01\Galaga_USFX_LAB01Pawn.generated.h
 D:\sis457\Galaga_USFX_LAB01\Source\Galaga_USFX_LAB01\NaveEnemigo.h
 D:\sis457\Galaga_USFX_LAB01\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_LAB01\NaveEnemigo.generated.h
+D:\sis457\Galaga_USFX_LAB01\Source\Galaga_USFX_LAB01\NaveEnemigoCaza.h
+D:\sis457\Galaga_USFX_LAB01\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_LAB01\NaveEnemigoCaza.generated.h
+D:\sis457\Galaga_USFX_LAB01\Source\Galaga_USFX_LAB01\NaveEnemigoTransporte.h
+D:\sis457\Galaga_USFX_LAB01\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_LAB01\NaveEnemigoTransporte.generated.h

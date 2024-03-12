@@ -1,0 +1,5 @@
+D:\sis457\Galaga_USFX_LAB01\Intermediate\Build\Win64\UE4Editor\Development\Galaga_USFX_LAB01\Definitions.Galaga_USFX_LAB01.h
+D:\sis457\Galaga_USFX_LAB01\Source\Galaga_USFX_LAB01\NaveEnemigoEspia.h
+D:\sis457\Galaga_USFX_LAB01\Source\Galaga_USFX_LAB01\NaveEnemigo.h
+D:\sis457\Galaga_USFX_LAB01\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_LAB01\NaveEnemigo.generated.h
+D:\sis457\Galaga_USFX_LAB01\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_LAB01\NaveEnemigoEspia.generated.h

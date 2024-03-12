@@ -20,3 +20,18 @@ void ANaveEnemigoCaza::Mover()
 void ANaveEnemigoCaza::Disparar()
 {
 }
+
+void ANaveEnemigoCaza::Destruirse()
+{
+
+}
+
+void ANaveEnemigoCaza::Escapar()
+{
+
+}
+
+void ANaveEnemigoCaza::Atacar() 
+{
+
+}

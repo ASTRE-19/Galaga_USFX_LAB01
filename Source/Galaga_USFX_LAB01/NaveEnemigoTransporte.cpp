@@ -12,8 +12,24 @@ ANaveEnemigoTransporte::ANaveEnemigoTransporte()
 
 void ANaveEnemigoTransporte::Mover()
 {
+
 }
 
 void ANaveEnemigoTransporte::Disparar()
 {
+}
+
+void ANaveEnemigoTransporte::Destruirse()
+{
+
+}
+
+void ANaveEnemigoTransporte::Escapar()
+{
+
+}
+
+void ANaveEnemigoTransporte::Atacar()
+{
+
 }

@@ -10,7 +10,7 @@ ANaveEnemigoNodrizaBlindado::ANaveEnemigoNodrizaBlindado()
 
 }
 
-void ANaveEnemigoNodrizaBlindado::Mover()
+void ANaveEnemigoNodrizaBlindado::Mover(float DeltaTime)
 {
 
 }

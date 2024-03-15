@@ -31,7 +31,7 @@ public:
 	FORCEINLINE void SetRadioReabasto(float _radioReabasto) { radioReabasto = _radioReabasto; }
 
 protected:
-	virtual void Mover();
+	virtual void Mover(float DeltaTime);
 	virtual void Disparar();
 	virtual void Destruirse();
 	virtual void Escapar();

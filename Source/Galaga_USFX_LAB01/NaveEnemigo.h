@@ -79,6 +79,6 @@ public:
 protected:
 	//Metodo virtual puro
 
-	void Mover() PURE_VIRTUAL(ANaveEnemigo::Mover, );
+	void Mover(float DeltaTime) PURE_VIRTUAL(ANaveEnemigo::Mover, );// enviar un delta time para mover
 	void Disparar() PURE_VIRTUAL(ANaveEnemigo::Disparar, );
 };

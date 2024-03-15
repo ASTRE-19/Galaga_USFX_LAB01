@@ -18,7 +18,7 @@ void ANaveEnemigoTransporteFurtivo::Destruirse() {
 	//polimorfismo
 }
 
-void ANaveEnemigoTransporteFurtivo::Mover() {
+void ANaveEnemigoTransporteFurtivo::Mover(float DeltaTime) {
 	//polimorfismo para mover()
 }
 

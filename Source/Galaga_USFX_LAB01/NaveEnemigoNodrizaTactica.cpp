@@ -10,7 +10,7 @@ ANaveEnemigoNodrizaTactica::ANaveEnemigoNodrizaTactica()
 
 }
 
-void ANaveEnemigoNodrizaTactica::Mover()
+void ANaveEnemigoNodrizaTactica::Mover(float DeltaTime)
 {
 
 }

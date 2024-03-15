@@ -15,6 +15,6 @@ class GALAGA_USFX_LAB01_API ANaveReabastecimientoMunicion : public ANaveEnemigoR
 	GENERATED_BODY()
 public:
 	ANaveReabastecimientoMunicion();
-	virtual void Mover() override; //Sobrescribir los metodos
+	virtual void Mover(float DeltaTime) override; //Sobrescribir los metodos
 	void RecargarMunicion(); //Metodo propio
 };

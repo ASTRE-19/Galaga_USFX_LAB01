@@ -56,7 +56,19 @@ public:
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+
+public:
+	TArray<ANaveEnemigoCaza*> TANavesEnemigos;
+private:
+	int TiempoTranscurrido;
+
+//public:
+//	//Llamado cada frame
+//	virtual void Tick(float DeltaTime) override;
 };
+
+
+
 
 
 

@@ -12,7 +12,7 @@ ANaveEnemigoEspiaTactico::ANaveEnemigoEspiaTactico()
 
 }
 
-void ANaveEnemigoEspiaTactico::Mover()
+void ANaveEnemigoEspiaTactico::Mover(float DeltaTime)
 {
 
 }

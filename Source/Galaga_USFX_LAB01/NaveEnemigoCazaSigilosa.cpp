@@ -14,7 +14,7 @@ ANaveEnemigoCazaSigilosa::ANaveEnemigoCazaSigilosa()
 }
 
 
-void ANaveEnemigoCazaSigilosa::Mover() {
+void ANaveEnemigoCazaSigilosa::Mover(float DeltaTime) {
 // Se mueve un poco mas rapido en su estado de sigilo
 }
 

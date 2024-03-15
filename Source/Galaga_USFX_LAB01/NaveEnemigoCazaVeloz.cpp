@@ -12,7 +12,7 @@ ANaveEnemigoCazaVeloz::ANaveEnemigoCazaVeloz()
 
 }
 
-void ANaveEnemigoCazaVeloz::Mover() {
+void ANaveEnemigoCazaVeloz::Mover(float DeltaTime) {
 	//movimiento mas rapido
 }
 

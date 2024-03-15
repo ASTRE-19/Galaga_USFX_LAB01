@@ -22,9 +22,12 @@
 AGalaga_USFX_LAB01GameMode::AGalaga_USFX_LAB01GameMode()
 {
 	// set default pawn class to our character class
+
 	DefaultPawnClass = AGalaga_USFX_LAB01Pawn::StaticClass();
 
 	//NaveEnemiga01 = nullptr;
+	//Configure este actor para que llame a Tick() en cada cuadro.
+	PrimaryActorTick.bCanEverTick = true;
 
 }
 
@@ -39,7 +42,7 @@ void AGalaga_USFX_LAB01GameMode::BeginPlay()
 	FVector ubicacionNaveTranslog = FVector(-750.0f, 1200.0f, 197.0f);
 
 	//Posiciones para NaveCaza
-	FVector ubicacionNaveCaza = FVector(-500.0f, 600.0f, 197.0f);
+	FVector ubicacionNaveCaza = FVector(-500.0f, 0.0f, 197.0f);
 	FVector ubicacionNaveCaza2 = FVector(-500.0f, 300.0f, 197.0f);
 	FVector ubicacionNaveCazaSig = FVector(-500.0f, 900.0f, 197.0f);
 	FVector ubicacionNaveCazaVel = FVector(-500.0f, 1200.0f, 197.0f);
@@ -72,43 +75,51 @@ void AGalaga_USFX_LAB01GameMode::BeginPlay()
 	UWorld* const World = GetWorld();
 	if (World != nullptr)
 	{
-		// spawn the naves
-		//naves Transporte
-		NaveEnemigoTransporte01 = World->SpawnActor<ANaveEnemigoTransporte>(ubicacionNaveTrans, rotacionNave);
-		NaveEnemigoTransporte01 = World->SpawnActor<ANaveEnemigoTransporte>(ubicacionNaveTrans2, rotacionNave);
-		NaveTransporteFurtivo01 = World->SpawnActor<ANaveEnemigoTransporteFurtivo>(ubicacionNaveTransFur, rotacionNave);
-		NaveTransporteLogistico01 = World->SpawnActor<ANaveEnemigoTransporteLogistico>(ubicacionNaveTranslog, rotacionNave);
+		
+		for (int i = 0; i < 5; i++) {
+			FVector PosicionNaveActual = FVector(ubicacionNaveCaza.X, ubicacionNaveCaza.Y+i*300.0f, ubicacionNaveCaza.Z);
+			ANaveEnemigoCaza* NaveEnemigaCazaTemporal = World->SpawnActor<ANaveEnemigoCaza>(PosicionNaveActual, rotacionNave);
 
-		//Naves Caza
-		NaveEnemigoCaza01 = World->SpawnActor<ANaveEnemigoCaza>(ubicacionNaveCaza, rotacionNave);
-		NaveEnemigoCaza01 = World->SpawnActor<ANaveEnemigoCaza>(ubicacionNaveCaza2, rotacionNave);
-		NaveCazaSigilo01 = World->SpawnActor<ANaveEnemigoCazaSigilosa>(ubicacionNaveCazaSig, rotacionNave);
-		NaveCazaVeloz01 = World->SpawnActor<ANaveEnemigoCazaVeloz>(ubicacionNaveCazaVel, rotacionNave);
+			//TANavesEnemigasCaza.Push(NaveEnemigaCazaTemporal);
+			TANavesEnemigos.Push(NaveEnemigaCazaTemporal);
+		}
+		//// spawn the naves
+		////naves Transporte
+		//NaveEnemigoTransporte01 = World->SpawnActor<ANaveEnemigoTransporte>(ubicacionNaveTrans, rotacionNave);
+		//NaveEnemigoTransporte01 = World->SpawnActor<ANaveEnemigoTransporte>(ubicacionNaveTrans2, rotacionNave);
+		//NaveTransporteFurtivo01 = World->SpawnActor<ANaveEnemigoTransporteFurtivo>(ubicacionNaveTransFur, rotacionNave);
+		//NaveTransporteLogistico01 = World->SpawnActor<ANaveEnemigoTransporteLogistico>(ubicacionNaveTranslog, rotacionNave);
 
-		//Naves Espia
-		NaveEnemigoEspia01 = World->SpawnActor<ANaveEnemigoEspia>(ubicacionNaveEspia, rotacionNave);
-		NaveEnemigoEspia01 = World->SpawnActor<ANaveEnemigoEspia>(ubicacionNaveEspia2, rotacionNave);
-		NaveEspiaTactico01 = World->SpawnActor<ANaveEnemigoEspiaTactico>(ubicacionNaveEspiaTac, rotacionNave);
-		NaveEspiaInfiltrado01 = World->SpawnActor<ANaveEnemigoEspiaInfiltrado>(ubicacionNaveEspiaInf, rotacionNave);
+		////Naves Caza
+		//NaveEnemigoCaza01 = World->SpawnActor<ANaveEnemigoCaza>(ubicacionNaveCaza, rotacionNave);
+		//NaveEnemigoCaza01 = World->SpawnActor<ANaveEnemigoCaza>(ubicacionNaveCaza2, rotacionNave);
+		//NaveCazaSigilo01 = World->SpawnActor<ANaveEnemigoCazaSigilosa>(ubicacionNaveCazaSig, rotacionNave);
+		//NaveCazaVeloz01 = World->SpawnActor<ANaveEnemigoCazaVeloz>(ubicacionNaveCazaVel, rotacionNave);
 
-		//Naves de Reabastecimiento
-		NaveEnemigoReabasto01 = World->SpawnActor<ANaveEnemigoReabastecimiento>(ubicacionNaveReabasto, rotacionNave);
-		NaveEnemigoReabasto01 = World->SpawnActor<ANaveEnemigoReabastecimiento>(ubicacionNaveReabasto2, rotacionNave);
-		NaveReabastoMunicion01 = World->SpawnActor<ANaveReabastecimientoMunicion>(ubicacionNaveReaMun, rotacionNave);
-		NaveReabastoEnergia01 = World->SpawnActor<ANaveReabastecimientoEnergia>(ubicacionNaveReaEne, rotacionNave);
+		////Naves Espia
+		//NaveEnemigoEspia01 = World->SpawnActor<ANaveEnemigoEspia>(ubicacionNaveEspia, rotacionNave);
+		//NaveEnemigoEspia01 = World->SpawnActor<ANaveEnemigoEspia>(ubicacionNaveEspia2, rotacionNave);
+		//NaveEspiaTactico01 = World->SpawnActor<ANaveEnemigoEspiaTactico>(ubicacionNaveEspiaTac, rotacionNave);
+		//NaveEspiaInfiltrado01 = World->SpawnActor<ANaveEnemigoEspiaInfiltrado>(ubicacionNaveEspiaInf, rotacionNave);
 
-		//Naves Nodriza
-		NaveEnemigoNodriza01 = World->SpawnActor<ANaveEnemigoNodriza>(ubicacionNaveNodriza, rotacionNave);
-		NaveEnemigoNodriza01 = World->SpawnActor<ANaveEnemigoNodriza>(ubicacionNaveNodriza2, rotacionNave);
-		NaveNodrizaBlindado01 = World->SpawnActor<ANaveEnemigoNodrizaBlindado>(ubicacionNaveNodBli, rotacionNave);
-		NaveNodrizaTactica01 = World->SpawnActor<ANaveEnemigoNodrizaTactica>(ubicacionNaveNodTac, rotacionNave);
+		////Naves de Reabastecimiento
+		//NaveEnemigoReabasto01 = World->SpawnActor<ANaveEnemigoReabastecimiento>(ubicacionNaveReabasto, rotacionNave);
+		//NaveEnemigoReabasto01 = World->SpawnActor<ANaveEnemigoReabastecimiento>(ubicacionNaveReabasto2, rotacionNave);
+		//NaveReabastoMunicion01 = World->SpawnActor<ANaveReabastecimientoMunicion>(ubicacionNaveReaMun, rotacionNave);
+		//NaveReabastoEnergia01 = World->SpawnActor<ANaveReabastecimientoEnergia>(ubicacionNaveReaEne, rotacionNave);
+
+		////Naves Nodriza
+		//NaveEnemigoNodriza01 = World->SpawnActor<ANaveEnemigoNodriza>(ubicacionNaveNodriza, rotacionNave);
+		//NaveEnemigoNodriza01 = World->SpawnActor<ANaveEnemigoNodriza>(ubicacionNaveNodriza2, rotacionNave);
+		//NaveNodrizaBlindado01 = World->SpawnActor<ANaveEnemigoNodrizaBlindado>(ubicacionNaveNodBli, rotacionNave);
+		//NaveNodrizaTactica01 = World->SpawnActor<ANaveEnemigoNodrizaTactica>(ubicacionNaveNodTac, rotacionNave);
 	}
 	
 
-	//NaveEnemiga01->SetPosicion(FVector(2000.0f,0.0f,120.0f));
-	NaveEnemigoCaza01->SetPosicion(FVector(-500.0f, 500.0f, 200.0f));
-	NaveEnemigoTransporte01->SetPosicion(FVector(500.0f, -500.0f, 200.0f));
-	NaveEnemigoEspia01->SetPosicion(FVector(500.0f, -500.0f, 200.0f));
-	NaveEnemigoReabasto01->SetPosicion(FVector(500.0f, -500.0f, 200.0f));
-	NaveEnemigoNodriza01->SetPosicion(FVector(500.0f, -500.0f, 200.0f));
+	////NaveEnemiga01->SetPosicion(FVector(2000.0f,0.0f,120.0f));
+	//NaveEnemigoCaza01->SetPosicion(FVector(-500.0f, 500.0f, 200.0f));
+	//NaveEnemigoTransporte01->SetPosicion(FVector(500.0f, -500.0f, 200.0f));
+	//NaveEnemigoEspia01->SetPosicion(FVector(500.0f, -500.0f, 200.0f));
+	//NaveEnemigoReabasto01->SetPosicion(FVector(500.0f, -500.0f, 200.0f));
+	//NaveEnemigoNodriza01->SetPosicion(FVector(500.0f, -500.0f, 200.0f));
 }

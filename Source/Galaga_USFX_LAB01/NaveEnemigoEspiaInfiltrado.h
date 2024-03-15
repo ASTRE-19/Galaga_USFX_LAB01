@@ -16,7 +16,7 @@ class GALAGA_USFX_LAB01_API ANaveEnemigoEspiaInfiltrado : public ANaveEnemigoEsp
 
 public:
 	ANaveEnemigoEspiaInfiltrado();
-	virtual void Mover() override; //Sobrescribir los metodos
+	virtual void Mover(float DeltaTime) override; //Sobrescribir los metodos
 	virtual void Atacar() override;
 	virtual void Escapar() override;
 	void CambiarDisfraz(); //Metodo propio

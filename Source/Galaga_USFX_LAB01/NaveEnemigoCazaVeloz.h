@@ -16,7 +16,7 @@ class GALAGA_USFX_LAB01_API ANaveEnemigoCazaVeloz : public ANaveEnemigoCaza
 
 public:
 	ANaveEnemigoCazaVeloz();
-	virtual void Mover() override; //Sobrescribir los metodos
+	virtual void Mover(float DeltaTime) override; //Sobrescribir los metodos
 	virtual void Escapar() override;
 	virtual void Atacar() override;
 	virtual void Destruirse() override;

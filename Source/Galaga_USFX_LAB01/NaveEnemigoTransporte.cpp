@@ -10,7 +10,7 @@ ANaveEnemigoTransporte::ANaveEnemigoTransporte()
 
 }
 
-void ANaveEnemigoTransporte::Mover()
+void ANaveEnemigoTransporte::Mover(float DeltaTime)
 {
 
 }

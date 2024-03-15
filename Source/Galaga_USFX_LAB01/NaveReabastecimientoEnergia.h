@@ -15,7 +15,7 @@ class GALAGA_USFX_LAB01_API ANaveReabastecimientoEnergia : public ANaveEnemigoRe
 	GENERATED_BODY()
 public:
 	ANaveReabastecimientoEnergia();
-	virtual void Mover() override; //Sobrescribir los metodos
+	virtual void Mover(float DeltaTime) override; //Sobrescribir los metodos
 	virtual void Escapar() override;
 	void RecargarEnergia(); //Metodo propio
 };

@@ -10,7 +10,7 @@ ANaveReabastecimientoMunicion::ANaveReabastecimientoMunicion()
 
 }
 
-void ANaveReabastecimientoMunicion::Mover()
+void ANaveReabastecimientoMunicion::Mover(float DeltaTime)
 {
 
 }

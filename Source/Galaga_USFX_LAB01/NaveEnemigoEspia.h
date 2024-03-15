@@ -28,7 +28,7 @@ public:
 	FORCEINLINE void SetNombre(FString _tipoCamuflaje) { tipoCamuflaje = _tipoCamuflaje; }
 	
 protected:
-	virtual void Mover();
+	virtual void Mover(float DeltaTime);
 	virtual void Disparar();
 	virtual void Destruirse();
 	virtual void Escapar();

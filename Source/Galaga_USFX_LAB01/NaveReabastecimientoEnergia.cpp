@@ -10,7 +10,7 @@ ANaveReabastecimientoEnergia::ANaveReabastecimientoEnergia()
 
 }
 
-void ANaveReabastecimientoEnergia::Mover()
+void ANaveReabastecimientoEnergia::Mover(float DeltaTime)
 {
 
 }
